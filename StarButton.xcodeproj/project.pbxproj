@@ -1,0 +1,422 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		45D041321ABD3B4A005DE20B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45D041311ABD3B4A005DE20B /* AppDelegate.swift */; };
+		45D041341ABD3B4A005DE20B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45D041331ABD3B4A005DE20B /* ViewController.swift */; };
+		45D041371ABD3B4A005DE20B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 45D041351ABD3B4A005DE20B /* Main.storyboard */; };
+		45D041391ABD3B4A005DE20B /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 45D041381ABD3B4A005DE20B /* Images.xcassets */; };
+		45D0413C1ABD3B4A005DE20B /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 45D0413A1ABD3B4A005DE20B /* LaunchScreen.xib */; };
+		45D041481ABD3B4A005DE20B /* StarButtonTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45D041471ABD3B4A005DE20B /* StarButtonTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		45D041421ABD3B4A005DE20B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 45D041241ABD3B4A005DE20B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 45D0412B1ABD3B4A005DE20B;
+			remoteInfo = StarButton;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		45D0412C1ABD3B4A005DE20B /* StarButton.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StarButton.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		45D041301ABD3B4A005DE20B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		45D041311ABD3B4A005DE20B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		45D041331ABD3B4A005DE20B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		45D041361ABD3B4A005DE20B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		45D041381ABD3B4A005DE20B /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		45D0413B1ABD3B4A005DE20B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		45D041411ABD3B4A005DE20B /* StarButtonTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StarButtonTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		45D041461ABD3B4A005DE20B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		45D041471ABD3B4A005DE20B /* StarButtonTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarButtonTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		45D041291ABD3B4A005DE20B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		45D0413E1ABD3B4A005DE20B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		45D041231ABD3B4A005DE20B = {
+			isa = PBXGroup;
+			children = (
+				45D0412E1ABD3B4A005DE20B /* StarButton */,
+				45D041441ABD3B4A005DE20B /* StarButtonTests */,
+				45D0412D1ABD3B4A005DE20B /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		45D0412D1ABD3B4A005DE20B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				45D0412C1ABD3B4A005DE20B /* StarButton.app */,
+				45D041411ABD3B4A005DE20B /* StarButtonTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		45D0412E1ABD3B4A005DE20B /* StarButton */ = {
+			isa = PBXGroup;
+			children = (
+				45D041311ABD3B4A005DE20B /* AppDelegate.swift */,
+				45D041331ABD3B4A005DE20B /* ViewController.swift */,
+				45D041351ABD3B4A005DE20B /* Main.storyboard */,
+				45D041381ABD3B4A005DE20B /* Images.xcassets */,
+				45D0413A1ABD3B4A005DE20B /* LaunchScreen.xib */,
+				45D0412F1ABD3B4A005DE20B /* Supporting Files */,
+			);
+			path = StarButton;
+			sourceTree = "<group>";
+		};
+		45D0412F1ABD3B4A005DE20B /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				45D041301ABD3B4A005DE20B /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		45D041441ABD3B4A005DE20B /* StarButtonTests */ = {
+			isa = PBXGroup;
+			children = (
+				45D041471ABD3B4A005DE20B /* StarButtonTests.swift */,
+				45D041451ABD3B4A005DE20B /* Supporting Files */,
+			);
+			path = StarButtonTests;
+			sourceTree = "<group>";
+		};
+		45D041451ABD3B4A005DE20B /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				45D041461ABD3B4A005DE20B /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		45D0412B1ABD3B4A005DE20B /* StarButton */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 45D0414B1ABD3B4A005DE20B /* Build configuration list for PBXNativeTarget "StarButton" */;
+			buildPhases = (
+				45D041281ABD3B4A005DE20B /* Sources */,
+				45D041291ABD3B4A005DE20B /* Frameworks */,
+				45D0412A1ABD3B4A005DE20B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = StarButton;
+			productName = StarButton;
+			productReference = 45D0412C1ABD3B4A005DE20B /* StarButton.app */;
+			productType = "com.apple.product-type.application";
+		};
+		45D041401ABD3B4A005DE20B /* StarButtonTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 45D0414E1ABD3B4A005DE20B /* Build configuration list for PBXNativeTarget "StarButtonTests" */;
+			buildPhases = (
+				45D0413D1ABD3B4A005DE20B /* Sources */,
+				45D0413E1ABD3B4A005DE20B /* Frameworks */,
+				45D0413F1ABD3B4A005DE20B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				45D041431ABD3B4A005DE20B /* PBXTargetDependency */,
+			);
+			name = StarButtonTests;
+			productName = StarButtonTests;
+			productReference = 45D041411ABD3B4A005DE20B /* StarButtonTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		45D041241ABD3B4A005DE20B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0620;
+				ORGANIZATIONNAME = luojie;
+				TargetAttributes = {
+					45D0412B1ABD3B4A005DE20B = {
+						CreatedOnToolsVersion = 6.2;
+					};
+					45D041401ABD3B4A005DE20B = {
+						CreatedOnToolsVersion = 6.2;
+						TestTargetID = 45D0412B1ABD3B4A005DE20B;
+					};
+				};
+			};
+			buildConfigurationList = 45D041271ABD3B4A005DE20B /* Build configuration list for PBXProject "StarButton" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 45D041231ABD3B4A005DE20B;
+			productRefGroup = 45D0412D1ABD3B4A005DE20B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				45D0412B1ABD3B4A005DE20B /* StarButton */,
+				45D041401ABD3B4A005DE20B /* StarButtonTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		45D0412A1ABD3B4A005DE20B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				45D041371ABD3B4A005DE20B /* Main.storyboard in Resources */,
+				45D0413C1ABD3B4A005DE20B /* LaunchScreen.xib in Resources */,
+				45D041391ABD3B4A005DE20B /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		45D0413F1ABD3B4A005DE20B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		45D041281ABD3B4A005DE20B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				45D041341ABD3B4A005DE20B /* ViewController.swift in Sources */,
+				45D041321ABD3B4A005DE20B /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		45D0413D1ABD3B4A005DE20B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				45D041481ABD3B4A005DE20B /* StarButtonTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		45D041431ABD3B4A005DE20B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 45D0412B1ABD3B4A005DE20B /* StarButton */;
+			targetProxy = 45D041421ABD3B4A005DE20B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		45D041351ABD3B4A005DE20B /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				45D041361ABD3B4A005DE20B /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		45D0413A1ABD3B4A005DE20B /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				45D0413B1ABD3B4A005DE20B /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		45D041491ABD3B4A005DE20B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		45D0414A1ABD3B4A005DE20B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		45D0414C1ABD3B4A005DE20B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = StarButton/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		45D0414D1ABD3B4A005DE20B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = StarButton/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		45D0414F1ABD3B4A005DE20B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = StarButtonTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/StarButton.app/StarButton";
+			};
+			name = Debug;
+		};
+		45D041501ABD3B4A005DE20B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = StarButtonTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/StarButton.app/StarButton";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		45D041271ABD3B4A005DE20B /* Build configuration list for PBXProject "StarButton" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				45D041491ABD3B4A005DE20B /* Debug */,
+				45D0414A1ABD3B4A005DE20B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		45D0414B1ABD3B4A005DE20B /* Build configuration list for PBXNativeTarget "StarButton" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				45D0414C1ABD3B4A005DE20B /* Debug */,
+				45D0414D1ABD3B4A005DE20B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		45D0414E1ABD3B4A005DE20B /* Build configuration list for PBXNativeTarget "StarButtonTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				45D0414F1ABD3B4A005DE20B /* Debug */,
+				45D041501ABD3B4A005DE20B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 45D041241ABD3B4A005DE20B /* Project object */;
+}
