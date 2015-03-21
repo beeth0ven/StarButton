@@ -2,6 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6751" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6736"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -19,25 +20,47 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JGe-sV-gyW" customClass="StarButton" customModule="StarButton" customModuleProvider="target">
                                 <rect key="frame" x="250" y="250" width="100" height="100"/>
                                 <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="7vq-7d-Dja"/>
+                                    <constraint firstAttribute="height" constant="100" id="ajc-Uk-lKH"/>
                                     <constraint firstAttribute="width" constant="100" id="l1e-i2-X7u"/>
+                                    <constraint firstAttribute="width" secondItem="JGe-sV-gyW" secondAttribute="height" multiplier="1:1" id="n7A-da-XbB"/>
                                 </constraints>
                                 <state key="normal">
                                     <color key="titleColor" red="1" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="starFavoriteColor">
+                                        <color key="value" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="ajc-Uk-lKH"/>
+                                        <exclude reference="l1e-i2-X7u"/>
+                                    </mask>
+                                </variation>
+                                <connections>
+                                    <action selector="changeSelectState:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Qyu-uV-zQf"/>
+                                </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="JGe-sV-gyW" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="EIb-SV-Ke7"/>
                             <constraint firstItem="JGe-sV-gyW" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="230" id="b3P-ex-NBH"/>
                             <constraint firstItem="JGe-sV-gyW" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="vWA-iI-0qJ"/>
                         </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="b3P-ex-NBH"/>
+                            </mask>
+                        </variation>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="253" y="378"/>
+            <point key="canvasLocation" x="187" y="376"/>
         </scene>
     </scenes>
     <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>

@@ -17,7 +17,7 @@ class StarButton: UIButton {
     private var outerRingShape : CAShapeLayer!
     private var fillRingShape : CAShapeLayer!
     
-    private let startKey = "FAVANIMKEY"
+    private let starKey = "FAVANIMKEY"
     private let favoriteKey = "FAVORITE"
     private let notFavoriteKey = "NOTFAVORITE"
     
@@ -127,14 +127,6 @@ class StarButton: UIButton {
         updateConstraints()
     }
     
-    private func prepareForFavorite() {
-        
-        executeWithoutActions {
-            
-        }
-        
-
-    }
     
     private func favorite(){
         //  1.Star
@@ -156,7 +148,7 @@ class StarButton: UIButton {
         starKeyFrames.timingFunction = CAMediaTimingFunction(name: kCAMediaTimingFunctionEaseIn)
         
         starKeyFrames.fillMode = kCAFillModeBackwards
-        starKeyFrames.setValue(favoriteKey, forKey: startKey)
+        starKeyFrames.setValue(favoriteKey, forKey: starKey)
         
         starKeyFrames.delegate = self
         starShap.addAnimation(starKeyFrames, forKey: favoriteKey)
@@ -216,6 +208,19 @@ class StarButton: UIButton {
         fillRingShape.transform = CATransform3DIdentity
     }
     
+    override func animationDidStop(anim: CAAnimation!, finished flag: Bool) {
+        if let key = anim.valueForKey(starKey) as? String {
+            switch(key) {
+            case (favoriteKey):
+                endFavorite()
+            case (notFavoriteKey):
+                prepareForFavorite()
+            default:
+                break
+            }
+        }
+        enableTouch()
+    }
     private func endFavorite(){
         
         executeWithoutActions{
@@ -249,9 +254,47 @@ class StarButton: UIButton {
     
     }
     
+    private func prepareForFavorite() {
+        
+        executeWithoutActions {
+            self.fillRingShape.opacity = 0
+            self.fillRingShape.transform = CATransform3DMakeScale(0.2, 0.2, 0.2)
+        }
+        
+}
+    
     private func notFavorite(){
         
+        let starFillColor = CABasicAnimation(keyPath: "fillColor")
+        starFillColor.toValue = notFavoriteColor.CGColor
+        starFillColor.duration = 0.3
         
+        let starOpacity = CABasicAnimation(keyPath: "opacity")
+        starOpacity.toValue = 0.5
+        starOpacity.duration = 0.3
+        
+        let starGroup = CAAnimationGroup()
+        starGroup.animations = [starFillColor, starOpacity]
+        
+        starShap.addAnimation(starGroup, forKey: nil)
+        starShap.fillColor = notFavoriteColor.CGColor
+        starShap.opacity = 0.5
+        
+        let fillCircle = CABasicAnimation(keyPath: "opacity")
+        fillCircle.toValue = 0
+        fillCircle.duration = 0.3
+        fillCircle.setValue(notFavoriteKey, forKey: starKey)
+        fillCircle.delegate = self
+        
+        fillRingShape.addAnimation(fillCircle, forKey: nil)
+        fillRingShape.opacity = 0
+        
+        let outerCircle = CABasicAnimation(keyPath: "opacity")
+        outerCircle.toValue = 0.5
+        outerCircle.duration = 0.3
+        
+        outerRingShape.addAnimation(outerCircle, forKey: nil)
+        outerRingShape.opacity = 0.5
         
     }
     
@@ -260,7 +303,22 @@ class StarButton: UIButton {
     }
     
     private func executeWithoutActions(closure: () -> ()) {
+        CATransaction.begin()
+        CATransaction.setDisableActions(true)
+        closure()
+        CATransaction.commit()
+    }
+    
+    override func animationDidStart(anim: CAAnimation!) {
+        disableTouch()
+    }
+    
+    private func disableTouch(){
+        self.userInteractionEnabled = false
+    }
 
+    private func enableTouch(){
+        self.userInteractionEnabled = true
     }
     
 }
