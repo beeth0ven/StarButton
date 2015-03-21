@@ -13,6 +13,9 @@
 		45D041391ABD3B4A005DE20B /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 45D041381ABD3B4A005DE20B /* Images.xcassets */; };
 		45D0413C1ABD3B4A005DE20B /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 45D0413A1ABD3B4A005DE20B /* LaunchScreen.xib */; };
 		45D041481ABD3B4A005DE20B /* StarButtonTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45D041471ABD3B4A005DE20B /* StarButtonTests.swift */; };
+		45D041521ABD3D90005DE20B /* StarButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45D041511ABD3D90005DE20B /* StarButton.swift */; };
+		45D041541ABD40DE005DE20B /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45D041531ABD40DE005DE20B /* Extension.swift */; };
+		45D041561ABD4A01005DE20B /* Paths.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45D041551ABD4A01005DE20B /* Paths.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +39,9 @@
 		45D041411ABD3B4A005DE20B /* StarButtonTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StarButtonTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		45D041461ABD3B4A005DE20B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		45D041471ABD3B4A005DE20B /* StarButtonTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarButtonTests.swift; sourceTree = "<group>"; };
+		45D041511ABD3D90005DE20B /* StarButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StarButton.swift; sourceTree = "<group>"; };
+		45D041531ABD40DE005DE20B /* Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
+		45D041551ABD4A01005DE20B /* Paths.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Paths.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,11 +83,10 @@
 		45D0412E1ABD3B4A005DE20B /* StarButton */ = {
 			isa = PBXGroup;
 			children = (
-				45D041311ABD3B4A005DE20B /* AppDelegate.swift */,
 				45D041331ABD3B4A005DE20B /* ViewController.swift */,
 				45D041351ABD3B4A005DE20B /* Main.storyboard */,
-				45D041381ABD3B4A005DE20B /* Images.xcassets */,
-				45D0413A1ABD3B4A005DE20B /* LaunchScreen.xib */,
+				45D041511ABD3D90005DE20B /* StarButton.swift */,
+				45D041551ABD4A01005DE20B /* Paths.swift */,
 				45D0412F1ABD3B4A005DE20B /* Supporting Files */,
 			);
 			path = StarButton;
@@ -90,6 +95,10 @@
 		45D0412F1ABD3B4A005DE20B /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				45D041531ABD40DE005DE20B /* Extension.swift */,
+				45D041311ABD3B4A005DE20B /* AppDelegate.swift */,
+				45D041381ABD3B4A005DE20B /* Images.xcassets */,
+				45D0413A1ABD3B4A005DE20B /* LaunchScreen.xib */,
 				45D041301ABD3B4A005DE20B /* Info.plist */,
 			);
 			name = "Supporting Files";
@@ -212,8 +221,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				45D041521ABD3D90005DE20B /* StarButton.swift in Sources */,
+				45D041561ABD4A01005DE20B /* Paths.swift in Sources */,
 				45D041341ABD3B4A005DE20B /* ViewController.swift in Sources */,
 				45D041321ABD3B4A005DE20B /* AppDelegate.swift in Sources */,
+				45D041541ABD40DE005DE20B /* Extension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -339,6 +351,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = StarButton/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -349,6 +362,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = StarButton/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -407,6 +421,7 @@
 				45D0414D1ABD3B4A005DE20B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		45D0414E1ABD3B4A005DE20B /* Build configuration list for PBXNativeTarget "StarButtonTests" */ = {
 			isa = XCConfigurationList;
@@ -415,6 +430,7 @@
 				45D041501ABD3B4A005DE20B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
